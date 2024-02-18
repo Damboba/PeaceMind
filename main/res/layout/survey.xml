@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:text="What degree of discomfort are you experiencing?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discomfort"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="255dp"
+        android:text="What kind of discomfort are you experiencing?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="470dp"
+        android:text="Are there any additional details you would like to report?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSharp"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:text="Sharp pain"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonBurn" />
+
+    <Button
+        android:id="@+id/buttonLow"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:text="Low/manageable"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAche" />
+
+    <Button
+        android:id="@+id/buttonMid"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:text="Moderate"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHigh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLow" />
+
+    <Button
+        android:id="@+id/buttonHigh"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:text="High/excruciating"
+        app:layout_constraintBottom_toTopOf="@+id/detailsInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMid" />
+
+    <Button
+        android:id="@+id/buttonAche"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:text="Dull pain/ache"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBurn" />
+
+    <Button
+        android:id="@+id/buttonBurn"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="135dp"
+        android:text="Burn"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/detailsInput"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="166dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enter any additional details here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHigh" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
